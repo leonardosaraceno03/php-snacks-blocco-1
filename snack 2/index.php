@@ -2,6 +2,7 @@
 $nome = $_GET['nome'];
 $email = $_GET['email'];
 $eta = $_GET['eta'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,8 +22,10 @@ $eta = $_GET['eta'];
     <?php
     if(strlen($nome) > 3 && strpos($email, ".") != false && strpos($email,"@")!= false && is_numeric($eta)){
         echo ('Accesso riuscito');
+        
     }else{
         echo ('Accesso fallito');
+        
     }
     ?>
 </body>
